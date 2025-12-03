@@ -1,0 +1,13 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Hide default cursor on devices that support hover (desktops/laptops) */
+  @media (hover: hover) and (pointer: fine) {
+    body, a, button, [role="button"], input, select, textarea {
+      cursor: none !important;
+    }
+  }
+}
